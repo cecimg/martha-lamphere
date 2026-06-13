@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Martha Lamphere | Resilience, Parenting, Wellness, and Human Potential</title>
+<meta name="description" content="Martha Lamphere explores resilience, conscious parenting, wellness, wisdom, and human potential through personal reflections, research-driven ideas, and meaningful conversations." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;400i;500i;700i&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+--paper:#FFFFFF;--paper-warm:#FDF8F4;--paper-warmer:#F8F0E5;--page-warm:#F4ECDD;
+--ink:#1B2640;--ink-soft:#3A3F50;--ink-muted:#6F7480;--rule:#E8E2DC;
+--gold:#B58A3E;--gold-light:#D4AB66;--gold-soft:rgba(181,138,62,0.18);
+--sage:#94A89B;--sage-soft:rgba(148,168,155,0.18);
+--font-heading:'Playfair Display',Georgia,serif;
+--font-body:'Inter',-apple-system,sans-serif;
+--max:1180px
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:16px;line-height:1.7;color:var(--ink-soft);background:var(--paper-warm);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.container{max-width:var(--max);margin:0 auto;padding:0 48px}
+.eyebrow{font-family:var(--font-body);font-weight:700;font-size:10.5px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:inline-block}
+.divider{width:50px;height:2px;background:var(--gold);margin:18px 0 22px;display:block}
+.divider.center{margin-left:auto;margin-right:auto}
+.h-display{font-family:var(--font-heading);font-weight:500;font-size:clamp(40px,5.4vw,68px);line-height:1.1;letter-spacing:-0.01em;color:var(--ink)}
+.h-section{font-family:var(--font-heading);font-weight:500;font-size:clamp(30px,3.6vw,46px);line-height:1.15;letter-spacing:-0.005em;color:var(--ink)}
+.h-card{font-family:var(--font-heading);font-weight:500;font-size:24px;line-height:1.25;color:var(--ink);letter-spacing:-0.005em}
+.h-italic{font-style:italic;font-weight:400}
+.lede{font-family:var(--font-heading);font-weight:400;font-style:italic;font-size:clamp(19px,1.9vw,24px);line-height:1.45;color:var(--ink-soft);max-width:720px}
+.body{font-size:17px;line-height:1.78;color:var(--ink-soft)}
+.btn-primary{display:inline-block;background:var(--ink);color:var(--paper-warm);font-family:var(--font-body);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:16px 32px;border:none;border-radius:2px;cursor:pointer;transition:background .25s ease,transform .15s ease,box-shadow .25s ease;text-decoration:none}
+.btn-primary:hover{background:var(--gold);transform:translateY(-1px);box-shadow:0 8px 22px rgba(181,138,62,0.28)}
+.btn-secondary{display:inline-block;background:transparent;color:var(--ink);font-family:var(--font-body);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:14.5px 30px;border:1.5px solid var(--ink);border-radius:2px;cursor:pointer;transition:all .25s ease;text-decoration:none}
+.btn-secondary:hover{background:var(--ink);color:var(--paper-warm)}
+.link-arrow{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-body);font-weight:600;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:var(--gold);text-decoration:none;transition:gap .25s ease,color .25s ease}
+.link-arrow:hover{gap:14px;color:var(--ink)}
+.link-arrow::after{content:'→';font-size:14px}
+
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,248,244,0.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:18px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;transition:padding .3s ease,border-color .3s ease,background .3s ease}
+nav.scrolled{padding:14px 48px;border-bottom:1px solid var(--rule)}
+.brand{display:flex;align-items:baseline;gap:12px;color:var(--ink)}
+.brand-mark{font-family:var(--font-heading);font-weight:600;font-size:21px;letter-spacing:-0.005em;color:var(--ink)}
+.nav-links{display:flex;align-items:center;gap:36px}
+.nav-links a{font-family:var(--font-body);font-weight:500;font-size:13px;color:var(--ink);transition:color .2s ease}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--ink);color:var(--paper-warm)!important;padding:9px 18px;font-weight:600;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;transition:background .2s ease}
+.nav-cta:hover{background:var(--gold)}
+
+/* HERO */
+.hero{padding:170px 48px 100px 48px;background:var(--paper-warm);position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;top:-200px;right:-100px;width:500px;height:500px;background:radial-gradient(ellipse at center,rgba(181,138,62,0.10) 0%,transparent 60%);pointer-events:none}
+.hero::after{content:'';position:absolute;bottom:-200px;left:-100px;width:500px;height:500px;background:radial-gradient(ellipse at center,rgba(148,168,155,0.10) 0%,transparent 60%);pointer-events:none}
+.hero-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:center;position:relative;z-index:1}
+.hero-text h1{margin-bottom:20px}
+.hero-text h1 .accent{color:var(--gold);font-style:italic;font-weight:500}
+.hero-text .lede{margin-bottom:28px;color:var(--ink)}
+.hero-text .body{margin-bottom:36px;max-width:560px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.hero-portrait{position:relative}
+.portrait-frame{aspect-ratio:4/5;background:linear-gradient(180deg,var(--paper-warmer) 0%,#EDE2D0 100%);border:1px solid var(--rule);position:relative;overflow:hidden;box-shadow:0 14px 40px rgba(27,38,64,0.10)}
+.portrait-frame::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 30%,rgba(255,255,255,0.6) 0%,transparent 60%),radial-gradient(ellipse at 70% 80%,rgba(181,138,62,0.10) 0%,transparent 60%);pointer-events:none}
+.portrait-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ink-muted);text-align:center;padding:24px;font-family:var(--font-heading);font-style:italic;font-size:14px}
+.portrait-placeholder span{font-family:var(--font-body);font-weight:700;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block;font-style:normal}
+.portrait-caption{margin-top:18px;font-family:var(--font-heading);font-style:italic;font-size:13.5px;color:var(--ink-muted);text-align:center;line-height:1.5}
+
+/* MANIFESTO / WHY */
+.why{padding:120px 48px;background:var(--paper);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.why-inner{max-width:880px;margin:0 auto;text-align:center}
+.why .eyebrow{margin-bottom:24px}
+.why .h-section{margin-bottom:24px}
+.why .body{font-size:18px;line-height:1.85;color:var(--ink-soft);max-width:720px;margin:0 auto 18px auto}
+.why .body em{font-style:italic;color:var(--ink)}
+.signature-block{margin-top:48px;padding:36px 36px;background:var(--paper-warm);border-left:2px solid var(--gold);text-align:left;max-width:760px;margin-left:auto;margin-right:auto}
+.signature-block .signature-label{font-family:var(--font-body);font-weight:700;font-size:9.5px;letter-spacing:2.8px;text-transform:uppercase;color:var(--gold);margin-bottom:14px}
+.signature-block p{font-family:var(--font-heading);font-style:italic;font-weight:400;font-size:18px;line-height:1.55;color:var(--ink);margin:0}
+.signature-block p+p{margin-top:14px}
+
+/* RAISING WHOLE HUMANS — first series */
+.series{padding:120px 48px;background:var(--paper-warm)}
+.series-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:64px;align-items:start}
+.series-marker{position:sticky;top:130px}
+.series-marker .badge{display:inline-block;font-family:var(--font-body);font-weight:700;font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);padding:7px 14px;border:1px solid var(--gold);border-radius:2px;margin-bottom:24px}
+.series-marker h2{font-family:var(--font-heading);font-weight:500;font-size:clamp(34px,4vw,52px);line-height:1.1;color:var(--ink);letter-spacing:-0.01em;margin-bottom:18px}
+.series-marker .tagline{font-family:var(--font-heading);font-style:italic;font-size:18px;line-height:1.5;color:var(--ink-soft);max-width:380px}
+.series-detail{display:flex;flex-direction:column;gap:32px}
+.series-detail p{font-size:17px;line-height:1.78;color:var(--ink-soft)}
+.questions-card{background:var(--paper);border-top:2px solid var(--gold);padding:36px 36px}
+.questions-card h4{font-family:var(--font-body);font-weight:700;font-size:10.5px;letter-spacing:2.8px;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+.questions-card ul{list-style:none;padding:0;margin:0}
+.questions-card li{padding:14px 0 14px 24px;border-bottom:1px solid var(--rule);font-family:var(--font-heading);font-style:italic;font-size:17px;line-height:1.5;color:var(--ink);position:relative}
+.questions-card li:last-child{border-bottom:none}
+.questions-card li::before{content:'—';position:absolute;left:0;top:14px;color:var(--gold);font-style:normal;font-family:var(--font-body)}
+
+/* PILLARS */
+.pillars{padding:120px 48px;background:var(--paper)}
+.pillars-inner{max-width:var(--max);margin:0 auto}
+.pillars-head{text-align:center;max-width:720px;margin:0 auto 64px auto}
+.pillars-head h2{margin-bottom:18px}
+.pillars-head .lede{margin:0 auto;color:var(--ink-soft)}
+.pillars-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.pillar{background:var(--paper-warm);padding:40px 36px;border-top:2px solid var(--gold);transition:transform .25s ease,box-shadow .25s ease}
+.pillar:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(27,38,64,0.08)}
+.pillar:nth-child(2){border-top-color:var(--sage)}
+.pillar:nth-child(3){border-top-color:var(--sage)}
+.pillar:nth-child(4){border-top-color:var(--gold)}
+.pillar .num{font-family:var(--font-body);font-weight:700;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.pillar:nth-child(2) .num,.pillar:nth-child(3) .num{color:var(--sage)}
+.pillar h3{margin-bottom:14px}
+.pillar p{font-size:15px;line-height:1.7;color:var(--ink-soft)}
+
+/* FEATURED REFLECTION */
+.featured{padding:120px 48px;background:var(--paper-warm)}
+.featured-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.2fr 1fr;gap:64px;align-items:center}
+.featured-card{background:var(--paper);padding:56px 56px;border-top:3px solid var(--gold);box-shadow:0 14px 40px rgba(27,38,64,0.06);position:relative}
+.featured-card .label{font-family:var(--font-body);font-weight:700;font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block}
+.featured-card h3{font-family:var(--font-heading);font-weight:500;font-size:clamp(28px,3vw,38px);line-height:1.15;color:var(--ink);letter-spacing:-0.005em;margin-bottom:14px}
+.featured-card .subtitle{font-family:var(--font-heading);font-style:italic;font-size:17px;line-height:1.45;color:var(--ink-soft);margin-bottom:28px}
+.featured-card .pull-quote{padding:18px 0 18px 24px;border-left:2px solid var(--gold);margin:24px 0 28px;font-family:var(--font-heading);font-style:italic;font-weight:500;font-size:19px;line-height:1.45;color:var(--ink)}
+.featured-side h4{font-family:var(--font-body);font-weight:700;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.featured-side h2{margin-bottom:20px}
+.featured-side p{font-size:17px;line-height:1.78;color:var(--ink-soft);margin-bottom:28px;max-width:420px}
+
+/* ABOUT PREVIEW */
+.about-preview{padding:120px 48px;background:var(--paper);border-top:1px solid var(--rule)}
+.about-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr;gap:80px;align-items:center}
+.about-text h2{margin-bottom:18px}
+.about-text .lede{margin-bottom:24px;color:var(--ink)}
+.about-text p{font-size:17px;line-height:1.78;color:var(--ink-soft);margin-bottom:18px;max-width:540px}
+.about-text p:last-of-type{margin-bottom:32px}
+.about-meta{background:var(--paper-warm);padding:36px 36px;border-left:2px solid var(--gold)}
+.about-meta h4{font-family:var(--font-body);font-weight:700;font-size:10px;letter-spacing:2.8px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.about-meta ul{list-style:none}
+.about-meta li{padding:11px 0;border-bottom:1px solid var(--rule);font-family:var(--font-heading);font-size:15px;color:var(--ink);font-weight:500}
+.about-meta li:last-child{border-bottom:none}
+.about-meta li em{font-family:var(--font-body);font-weight:400;font-style:normal;color:var(--ink-muted);font-size:13px;display:block;margin-top:4px}
+
+/* NEWSLETTER CTA */
+.newsletter{padding:120px 48px;background:linear-gradient(180deg,var(--paper-warm) 0%,var(--paper-warmer) 100%);border-top:1px solid var(--rule);position:relative;overflow:hidden}
+.newsletter::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:600px;height:600px;background:radial-gradient(ellipse at center,rgba(181,138,62,0.08) 0%,transparent 60%);pointer-events:none}
+.newsletter-inner{max-width:680px;margin:0 auto;text-align:center;position:relative;z-index:1}
+.newsletter .eyebrow{margin-bottom:18px}
+.newsletter h2{margin-bottom:18px}
+.newsletter h2 em{font-style:italic;color:var(--gold);font-weight:500}
+.newsletter p{font-size:17px;line-height:1.7;color:var(--ink-soft);margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto}
+.newsletter-form{display:flex;gap:8px;max-width:480px;margin:0 auto;flex-wrap:wrap}
+.newsletter-form input{flex:1;min-width:0;font-family:var(--font-body);font-size:15px;font-weight:400;color:var(--ink);background:var(--paper);border:1px solid var(--rule);border-radius:2px;padding:14px 16px;transition:border-color .25s ease,box-shadow .25s ease;-webkit-appearance:none;appearance:none}
+.newsletter-form input:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(181,138,62,0.12)}
+.newsletter-form input::placeholder{color:var(--ink-muted)}
+.newsletter-form button{font-family:var(--font-body);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;background:var(--ink);color:var(--paper-warm);border:none;border-radius:2px;padding:14px 28px;cursor:pointer;transition:background .25s ease,transform .15s ease}
+.newsletter-form button:hover{background:var(--gold);transform:translateY(-1px)}
+.newsletter-note{font-family:var(--font-body);font-weight:400;font-size:11.5px;letter-spacing:0.3px;color:var(--ink-muted);margin-top:18px;font-style:italic}
+
+/* FOOTER */
+footer{padding:64px 48px 32px 48px;background:var(--paper-warmer);border-top:1px solid var(--rule)}
+.footer-inner{max-width:var(--max);margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid var(--rule)}
+.footer-brand .brand{margin-bottom:18px}
+.footer-brand p{color:var(--ink-muted);font-size:14px;line-height:1.65;max-width:320px;margin-top:14px;font-style:italic;font-family:var(--font-heading)}
+.footer-col h5{font-family:var(--font-body);font-weight:700;font-size:10.5px;letter-spacing:2.8px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.footer-col a{color:var(--ink-soft);font-size:14px;transition:color .2s ease}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;flex-wrap:wrap;gap:14px;color:var(--ink-muted);font-size:11.5px;letter-spacing:0.3px}
+
+/* REVEAL */
+@keyframes revealFallback{to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(28px);animation:revealFallback 1s cubic-bezier(0.16,1,0.3,1) 0.5s forwards;transition:opacity .9s cubic-bezier(0.16,1,0.3,1),transform .9s cubic-bezier(0.16,1,0.3,1)}
+.reveal.revealed{opacity:1;transform:translateY(0);animation:none}
+.reveal.delay-1{animation-delay:.65s;transition-delay:.1s}
+.reveal.delay-2{animation-delay:.8s;transition-delay:.2s}
+.reveal.delay-3{animation-delay:.95s;transition-delay:.3s}
+
+/* RESPONSIVE */
+@media (max-width:1024px){
+nav,.hero,.why,.series,.pillars,.featured,.about-preview,.newsletter,footer{padding-left:32px;padding-right:32px}
+nav.scrolled{padding-left:32px;padding-right:32px}
+.hero{padding-top:140px;padding-bottom:80px}
+.why,.series,.pillars,.featured,.about-preview,.newsletter{padding-top:88px;padding-bottom:88px}
+.hero-grid{grid-template-columns:1fr;gap:48px}
+.hero-portrait{max-width:440px;margin:0 auto}
+.series-inner{grid-template-columns:1fr;gap:36px}
+.series-marker{position:static}
+.pillars-grid{grid-template-columns:1fr}
+.featured-inner{grid-template-columns:1fr;gap:48px}
+.about-inner{grid-template-columns:1fr;gap:40px}
+.featured-card{padding:40px 36px}
+.footer-top{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media (max-width:640px){
+nav{padding:14px 22px}
+nav.scrolled{padding:10px 22px}
+.nav-links a:not(.nav-cta){display:none}
+.nav-links{gap:14px}
+.hero,.why,.series,.pillars,.featured,.about-preview,.newsletter{padding-left:22px;padding-right:22px}
+.hero{padding:120px 22px 60px 22px}
+.why,.series,.pillars,.featured,.about-preview,.newsletter{padding-top:64px;padding-bottom:64px}
+footer{padding:48px 22px 24px 22px}
+.featured-card{padding:32px 28px}
+.signature-block,.questions-card,.about-meta{padding:28px 24px}
+.hero-actions{flex-direction:column;align-items:stretch}
+.btn-primary,.btn-secondary{text-align:center}
+.newsletter-form{flex-direction:column}
+.newsletter-form input,.newsletter-form button{width:100%}
+.footer-top{grid-template-columns:1fr;gap:28px}
+.footer-bottom{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="brand"><span class="brand-mark">Martha Lamphere</span></a>
+  <div class="nav-links">
+    <a href="about.html">About Martha</a>
+    <a href="raising-whole-humans.html">Raising Whole Humans</a>
+    <a href="reflections.html">Reflections</a>
+    <a href="conversations.html">Conversations &amp; Speaking</a>
+    <a href="contact.html">Contact</a>
+    <a href="#join" class="nav-cta">Join the list</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-text reveal">
+      <p style="font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:400;font-size:14.5px;color:var(--ink-muted);margin-bottom:14px;letter-spacing:0.01em">The Resilient Life <span style="font-style:normal;font-family:'Inter',sans-serif;font-weight:600;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin:0 8px;vertical-align:1px">with</span> Martha Lamphere</p>
+      <span class="eyebrow">Reflections · Conversations · Wisdom</span>
+      <h1 class="h-display">Research meets <span class="accent">real life,</span><br/>for parents and women building whole, resilient lives.</h1>
+      <span class="divider"></span>
+      <p class="lede">Martha Lamphere explores the ideas, stories, books, and conversations that help us parent with more trust, live with more resilience, and become more whole as mothers, women, and human beings.</p>
+      <div class="hero-actions">
+        <a href="#join" class="btn-primary">Join the private list</a>
+        <a href="raising-whole-humans.html" class="btn-secondary">Raising Whole Humans</a>
+      </div>
+    </div>
+
+    <div class="hero-portrait reveal delay-1">
+      <div class="portrait-frame">
+        <div class="portrait-placeholder">
+          <span>Editorial portrait</span>
+          A warm, intelligent portrait<br/>of Martha will live here
+        </div>
+      </div>
+      <p class="portrait-caption">Martha Lamphere · Founder, Curator, Conversation Host</p>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS MATTERS -->
+<section class="why">
+  <div class="why-inner">
+    <span class="eyebrow reveal">Why this matters</span>
+    <h2 class="h-section reveal delay-1">Achievement is not the whole story.</h2>
+    <span class="divider center reveal delay-1"></span>
+    <p class="body reveal delay-2">We live in a world that celebrates achievement. Our children need more than opportunity. They need <em>self-trust.</em> They need <em>emotional regulation.</em> They need the chance to become authors of their own lives.</p>
+    <p class="body reveal delay-2">And as parents, our work is not only to shape them. It is to understand ourselves.</p>
+
+    <div class="signature-block reveal delay-2">
+      <span class="signature-label">/ Signature message</span>
+      <p>"In a world obsessed with achievement, I care about something deeper: helping parents, children, women, and families become whole, resilient, healthy, and self-trusting."</p>
+      <p>"I believe our children do not need us to control their path. They need us to do our own inner work, regulate our own fear, and create the conditions where they can become self-driven, emotionally healthy, and fully themselves."</p>
+    </div>
+  </div>
+</section>
+
+<!-- RAISING WHOLE HUMANS -->
+<section class="series">
+  <div class="series-inner">
+    <div class="series-marker reveal">
+      <span class="badge">/ The first series</span>
+      <h2>Raising Whole Humans.</h2>
+      <p class="tagline">A reflection series for thoughtful parents raising children in a high-pressure world.</p>
+    </div>
+
+    <div class="series-detail reveal delay-1">
+      <p>Raising Whole Humans explores how parents can support high-potential and high-achieving children, without turning love into pressure or fear into control. The work is not only about the child. It is also about the parent's self-reflection, nervous system, expectations, and capacity to trust.</p>
+
+      <div class="questions-card">
+        <h4>This is a space for questions like:</h4>
+        <ul>
+          <li>Where does support become control?</li>
+          <li>How do children build real self-worth?</li>
+          <li>What are parents projecting without realizing it?</li>
+          <li>How do we raise children who are not only successful, but whole?</li>
+        </ul>
+      </div>
+
+      <a href="raising-whole-humans.html" class="link-arrow">Explore the series</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOUR PILLARS -->
+<section class="pillars">
+  <div class="pillars-inner">
+    <div class="pillars-head reveal">
+      <span class="eyebrow">Four content pillars</span>
+      <h2 class="h-section">The threads of a whole life.</h2>
+      <p class="lede">Four lifelong interests, woven together. Each pillar is a separate conversation, and yet none of them stand alone.</p>
+    </div>
+
+    <div class="pillars-grid">
+      <div class="pillar reveal">
+        <span class="num">/ 01 — Conscious Parenting</span>
+        <h3 class="h-card">Raising whole humans, not just high performers.</h3>
+        <p>For parents raising self-driven, emotionally healthy children in achievement-driven communities. Where the inner work of the parent meets the development of the child.</p>
+      </div>
+      <div class="pillar reveal delay-1">
+        <span class="num">/ 02 — Resilience</span>
+        <h3 class="h-card">The strength to keep going.</h3>
+        <p>Stories and reflections on hope, loss, determination, and surrender, and the long, quiet work of building a life that can hold what comes.</p>
+      </div>
+      <div class="pillar reveal">
+        <span class="num">/ 03 — Wisdom Curation</span>
+        <h3 class="h-card">Books, ideas, and conversations.</h3>
+        <p>Authors, researchers, and thinkers whose work makes life richer and more meaningful, distilled into reflections worth keeping.</p>
+      </div>
+      <div class="pillar reveal delay-1">
+        <span class="num">/ 04 — Whole-Life Well-Being</span>
+        <h3 class="h-card">The art of living well.</h3>
+        <p>Health, meditation, longevity, beauty, joy, and relationships. The slow-built daily practices that shape who we get to become.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED REFLECTION -->
+<section class="featured">
+  <div class="featured-inner">
+    <div class="featured-card reveal">
+      <span class="label">Featured reflection</span>
+      <h3>The Grade Was Not the Emergency.</h3>
+      <p class="subtitle">A story about a missed assignment, a parenting choice, and the difference between controlling a child and trusting her to build her own self-worth.</p>
+      <div class="pull-quote">"I cannot buy you self-esteem. I cannot buy you self-worth."</div>
+      <a href="reflections.html" class="link-arrow">Read the reflection</a>
+    </div>
+
+    <div class="featured-side reveal delay-1">
+      <h4>Reflections</h4>
+      <h2 class="h-section">Short essays on parenting, resilience, and what we are quietly learning.</h2>
+      <p>Each reflection is a single, honest piece of writing. Short enough to read in one sitting, written to leave something behind. New essays are sent first to the private list.</p>
+      <a href="reflections.html" class="link-arrow">Browse reflections</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT PREVIEW -->
+<section class="about-preview">
+  <div class="about-inner">
+    <div class="about-text reveal">
+      <span class="eyebrow">About Martha</span>
+      <h2 class="h-section">A builder. A mother. A wisdom curator.</h2>
+      <p class="lede">Martha Lamphere is a mother, entrepreneur, health coach, lifelong learner, and curator of meaningful conversations.</p>
+      <p>Her life has moved through business, motherhood, philanthropy, education, meditation, wellness, and deep personal resilience. She has built, studied, led, listened, searched, and learned from both extraordinary people and difficult seasons.</p>
+      <p>Now she is bringing those threads together into a quiet platform for reflections, conversations, and small gatherings around what it means to live, parent, and grow with more consciousness and courage.</p>
+      <a href="about.html" class="link-arrow">Read Martha's story</a>
+    </div>
+
+    <aside class="about-meta reveal delay-1">
+      <h4>Threads of a life</h4>
+      <ul>
+        <li>Mother<em>To a gifted, sensitive daughter</em></li>
+        <li>Entrepreneur<em>Built a jewelry brand to Bergdorf Goodman</em></li>
+        <li>Health Coach<em>Certified, with a longevity and wellness focus</em></li>
+        <li>Education Advocate<em>Board leadership at The Weiss School</em></li>
+        <li>Lifelong Learner<em>Books, research, meditation, conversation</em></li>
+        <li>Resilience<em>IVF, motherhood, grief, and becoming</em></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<!-- NEWSLETTER CTA -->
+<section class="newsletter" id="join">
+  <div class="newsletter-inner">
+    <span class="eyebrow reveal">A quiet beginning</span>
+    <h2 class="h-section reveal delay-1">Join the <em>private reflection list.</em></h2>
+    <p class="reveal delay-2">Reflections on parenting, resilience, wellness, books, and the art of raising whole humans, sent quietly, never frequently, only when there is something worth saying.</p>
+
+    <form class="newsletter-form reveal delay-2" action="https://formsubmit.co/hello@marthalamphere.com" method="POST">
+      <input type="hidden" name="_subject" value="New private list signup, marthalamphere.com">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="email" name="email" required placeholder="your@email.com" autocomplete="email">
+      <button type="submit">Join the list</button>
+    </form>
+
+    <p class="newsletter-note reveal delay-2">No marketing. No noise. Unsubscribe at any time.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px"><span style="font-family:'Inter',sans-serif;font-weight:700;font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)">The Resilient Life</span><span class="brand-mark">Martha Lamphere</span></a>
+        <p style="font-family:var(--font-heading);font-style:italic;font-size:13px;color:var(--ink-muted);margin-top:6px;margin-bottom:14px">with Martha Lamphere</p>
+        <p>Reflections, conversations, and wisdom for parents and women building whole, resilient lives.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Explore</h5>
+        <ul>
+          <li><a href="about.html">About Martha</a></li>
+          <li><a href="raising-whole-humans.html">Raising Whole Humans</a></li>
+          <li><a href="reflections.html">Reflections</a></li>
+          <li><a href="conversations.html">Conversations &amp; Speaking</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#join">Join the list</a></li>
+          <li><a href="contact.html">Invite Martha</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Pillars</h5>
+        <ul>
+          <li>Conscious Parenting</li>
+          <li>Resilience</li>
+          <li>Wisdom Curation</li>
+          <li>Whole-Life Well-Being</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Martha Lamphere · All rights reserved</span>
+      <span style="font-style:italic;font-family:var(--font-heading)">Research meets real life.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+try{
+var nav=document.getElementById('nav');
+var onScroll=function(){if(window.scrollY>30)nav.classList.add('scrolled');else nav.classList.remove('scrolled');};
+window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+if('IntersectionObserver' in window){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');o.unobserve(e.target);}});},{threshold:0.12});document.querySelectorAll('.reveal').forEach(function(el){o.observe(el);});}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('revealed');});}
+}catch(err){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('revealed');});}
+})();
+</script>
+</body>
+</html>

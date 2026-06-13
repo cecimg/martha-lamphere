@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sample · BritishVogue-design — Martha Lamphere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFFFFF;--text:#1A1A1A;--text-strong:#000000;--text-muted:#757575;--rule:#E5E5E5;--cta-bg:#000000;--cta-text:#FFFFFF;--font-serif:"Playfair Display","Libre Bodoni","Didot",Georgia,serif;--font-sans:"Inter","Helvetica Neue",Helvetica,sans-serif;--max:1280px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-sans);color:var(--text);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--text);text-decoration:none;transition:opacity .15s ease}
+a:hover{opacity:.6}
+
+.sample-banner{background:#000;color:#fff;padding:8px 24px;font-family:var(--font-sans);font-size:11px;letter-spacing:1.5px;text-transform:uppercase;text-align:center}
+
+/* MASTHEAD */
+.masthead{border-bottom:1px solid var(--rule);padding:18px 24px}
+.mast-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px}
+.mast-left,.mast-right{display:flex;align-items:center;gap:24px}
+.mast-right{justify-content:flex-end}
+.mast-left a,.mast-right a{font-family:var(--font-sans);font-weight:600;font-size:11.5px;letter-spacing:0.12em;text-transform:uppercase;color:var(--text-strong)}
+.wordmark{font-family:var(--font-serif);font-weight:700;font-size:clamp(28px,3.6vw,42px);letter-spacing:-0.005em;color:var(--text-strong);text-align:center;line-height:1}
+.subwordmark{font-family:var(--font-sans);font-weight:600;font-size:9.5px;letter-spacing:0.28em;text-transform:uppercase;color:var(--text-muted);margin-top:6px;text-align:center;display:block}
+
+/* CATEGORY BAR */
+.category-bar{border-bottom:1px solid var(--rule);padding:12px 24px}
+.cat-inner{max-width:var(--max);margin:0 auto;display:flex;justify-content:center;gap:36px;flex-wrap:wrap}
+.cat-inner a{font-family:var(--font-sans);font-weight:600;font-size:11.5px;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-strong)}
+
+/* HERO — full-bleed photo with serif headline OVER it */
+.hero{position:relative;background:#1A1A1A;color:#fff;min-height:78vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-image{position:absolute;inset:0;background:linear-gradient(140deg,#3A3633 0%,#1F1B19 60%,#0F0D0C 100%);display:flex;align-items:center;justify-content:center}
+.hero-image::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,0.85) 100%);pointer-events:none}
+.placeholder-note{font-family:var(--font-sans);font-weight:600;font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.45);position:absolute;top:24px;left:50%;transform:translateX(-50%);text-align:center}
+.placeholder-note em{display:block;font-family:var(--font-serif);font-style:italic;font-weight:400;font-size:13px;letter-spacing:normal;text-transform:none;color:rgba(255,255,255,0.55);margin-top:6px}
+.hero-content{position:relative;z-index:2;max-width:var(--max);margin:0 auto;width:100%;padding:0 24px 64px 24px}
+.kicker{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:#fff;margin-bottom:18px}
+.hero h1{font-family:var(--font-serif);font-weight:700;font-size:clamp(40px,6vw,80px);line-height:1.05;letter-spacing:-0.005em;color:#fff;max-width:1080px;margin-bottom:22px}
+.hero .dek{font-family:var(--font-sans);font-weight:400;font-size:17px;line-height:1.55;color:rgba(255,255,255,0.85);max-width:660px;margin-bottom:24px}
+.hero-byline{font-family:var(--font-sans);font-weight:400;font-size:12px;letter-spacing:0.04em;color:rgba(255,255,255,0.7)}
+.hero-byline strong{color:#fff;font-weight:600}
+
+/* CTA strip */
+.cta-strip{padding:36px 24px;border-bottom:1px solid var(--rule);text-align:center}
+.cta-strip .label{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-muted);margin-bottom:14px;display:block}
+.cta-strip .actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;background:var(--cta-bg);color:var(--cta-text);font-family:var(--font-sans);font-weight:600;font-size:12px;letter-spacing:0.16em;text-transform:uppercase;padding:14px 28px;border:none;border-radius:0;text-decoration:none;transition:opacity .2s ease}
+.btn:hover{opacity:0.78}
+.btn-ghost{background:transparent;color:var(--text-strong);border:1px solid var(--text-strong)}
+.btn-ghost:hover{background:var(--text-strong);color:#fff;opacity:1}
+
+/* FEATURE FEED */
+.feed{padding:96px 24px;border-bottom:1px solid var(--rule)}
+.feed-inner{max-width:var(--max);margin:0 auto}
+.feed-rail{display:flex;align-items:flex-end;justify-content:space-between;border-bottom:1px solid var(--rule);padding-bottom:14px;margin-bottom:48px}
+.feed-rail .rail-kicker{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-strong)}
+.feed-rail .rail-meta{font-family:var(--font-sans);font-size:11px;color:var(--text-muted);letter-spacing:0.05em}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:32px;row-gap:48px}
+.card{display:flex;flex-direction:column}
+.card-image{aspect-ratio:4/5;background:#EFEAE5;margin-bottom:20px;position:relative;overflow:hidden}
+.card.hero-card{grid-column:span 8}
+.card.hero-card .card-image{aspect-ratio:8/9;background:linear-gradient(160deg,#D8CFC4 0%,#B7AC9E 100%)}
+.card.support{grid-column:span 4}
+.card.support .card-image{background:linear-gradient(160deg,#E5DDD2 0%,#C5BAAD 100%)}
+.card.third{grid-column:span 4}
+.card.third .card-image{aspect-ratio:1/1}
+.card.third:nth-of-type(2) .card-image{background:linear-gradient(160deg,#DBD3C5 0%,#B0A595 100%)}
+.card.third:nth-of-type(3) .card-image{background:linear-gradient(160deg,#E0D7CC 0%,#BCAFA1 100%)}
+.card.third:nth-of-type(4) .card-image{background:linear-gradient(160deg,#D4CCBE 0%,#A89D8E 100%)}
+.image-placeholder{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--font-sans);font-weight:600;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:rgba(0,0,0,0.4);text-align:center}
+.image-placeholder em{display:block;font-family:var(--font-serif);font-style:italic;font-weight:400;font-size:12px;letter-spacing:normal;text-transform:none;color:rgba(0,0,0,0.45);margin-top:5px}
+.card-kicker{font-family:var(--font-sans);font-weight:600;font-size:11px;letter-spacing:0.14em;text-transform:uppercase;color:var(--text-strong);margin-bottom:8px}
+.card-title{font-family:var(--font-serif);font-weight:500;font-size:24px;line-height:1.2;color:var(--text-strong);margin-bottom:8px;letter-spacing:-0.005em}
+.card.hero-card .card-title{font-size:clamp(32px,3vw,44px);font-weight:700;line-height:1.15;margin-bottom:14px}
+.card-dek{font-family:var(--font-sans);font-size:14.5px;line-height:1.55;color:var(--text);margin-bottom:10px;max-width:560px}
+.card.hero-card .card-dek{font-size:16px}
+.card-byline{font-family:var(--font-sans);font-size:11.5px;color:var(--text-muted);letter-spacing:0.04em}
+.card-byline strong{color:var(--text);font-weight:600}
+
+@media (max-width:880px){
+.mast-inner{grid-template-columns:1fr;gap:14px;text-align:center}
+.mast-left,.mast-right{justify-content:center;gap:18px}
+.cat-inner{gap:18px}
+.hero{min-height:60vh}
+.hero h1{font-size:38px}
+.feed{padding:64px 22px}
+.grid{gap:24px;row-gap:36px}
+.card.hero-card,.card.support,.card.third{grid-column:span 12}
+}
+</style>
+</head>
+<body>
+
+<div class="sample-banner">SAMPLE · BritishVogue-design · Photo-led editorial — Martha Lamphere</div>
+
+<header class="masthead">
+  <div class="mast-inner">
+    <div class="mast-left">
+      <a href="#">Subscribe</a>
+      <a href="#">Sign in</a>
+    </div>
+    <div>
+      <div class="wordmark">Martha Lamphere</div>
+      <span class="subwordmark">Reflections · Conversations · Wisdom</span>
+    </div>
+    <div class="mast-right">
+      <a href="#">Search</a>
+      <a href="#">Newsletter</a>
+    </div>
+  </div>
+</header>
+
+<nav class="category-bar">
+  <div class="cat-inner">
+    <a href="#">Raising Whole Humans</a>
+    <a href="#">Reflections</a>
+    <a href="#">Conversations</a>
+    <a href="#">About</a>
+    <a href="#">Speaking</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-image">
+    <div class="placeholder-note">Editorial Portrait<em>A warm, intelligent black-and-white image of Martha will live here</em></div>
+  </div>
+  <div class="hero-content">
+    <span class="kicker">The Cover Story · Issue 01</span>
+    <h1>Research meets real life, for the parents and women building whole, resilient lives.</h1>
+    <p class="dek">A new platform of reflections, conversations, and small gatherings for thoughtful parents raising self-driven children — and women turning lived experience into meaningful contribution.</p>
+    <div class="hero-byline">By <strong>Martha Lamphere</strong> &nbsp;·&nbsp; Founder &amp; Conversation Host</div>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <span class="label">A quiet beginning</span>
+  <div class="actions">
+    <a href="#" class="btn">Join the private list</a>
+    <a href="#" class="btn btn-ghost">Read Raising Whole Humans</a>
+  </div>
+</section>
+
+<section class="feed">
+  <div class="feed-inner">
+    <div class="feed-rail">
+      <span class="rail-kicker">Latest from the platform</span>
+      <span class="rail-meta">Issue 01 · 2026</span>
+    </div>
+
+    <div class="grid">
+
+      <article class="card hero-card">
+        <div class="card-image"><span class="image-placeholder">Featured Reflection<em>Editorial photo — books, hands, soft daylight</em></span></div>
+        <span class="card-kicker">Conscious Parenting · Featured</span>
+        <h2 class="card-title">The grade was not the emergency.</h2>
+        <p class="card-dek">A short essay on a missed assignment, a parenting choice, and the quiet difference between controlling a child and trusting her to build her own self-worth.</p>
+        <p class="card-byline">By <strong>Martha Lamphere</strong> &nbsp;·&nbsp; 5 minute read</p>
+      </article>
+
+      <article class="card support">
+        <div class="card-image"><span class="image-placeholder">Series<em>Editorial photo of mother &amp; child</em></span></div>
+        <span class="card-kicker">The First Series</span>
+        <h3 class="card-title">Raising whole humans, not just high performers.</h3>
+        <p class="card-dek">Four signature questions for parents of gifted, sensitive, and high-potential children — explored across a quiet reflection series.</p>
+        <p class="card-byline">A series in progress</p>
+      </article>
+
+      <article class="card third">
+        <div class="card-image"><span class="image-placeholder">Pillar<em>Books, soft light</em></span></div>
+        <span class="card-kicker">Wisdom Curation</span>
+        <h3 class="card-title">What I have been reading.</h3>
+        <p class="card-dek">A short, honest pass through the few works changing how I think about parenting, attention, and a life worth living.</p>
+        <p class="card-byline">Forthcoming</p>
+      </article>
+
+      <article class="card third">
+        <div class="card-image"><span class="image-placeholder">Pillar<em>Quiet interior, sunlight</em></span></div>
+        <span class="card-kicker">Whole-Life Well-Being</span>
+        <h3 class="card-title">The practice of quiet mornings.</h3>
+        <p class="card-dek">On meditation, attention, and the small daily rituals that shape who we get to become.</p>
+        <p class="card-byline">Forthcoming</p>
+      </article>
+
+      <article class="card third">
+        <div class="card-image"><span class="image-placeholder">Pillar<em>Horizon, open sky</em></span></div>
+        <span class="card-kicker">Resilience</span>
+        <h3 class="card-title">Becoming, without a map.</h3>
+        <p class="card-dek">On the seasons life does not narrate for us — and the long, quiet work of staying open through the chapters we did not choose.</p>
+        <p class="card-byline">Forthcoming</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sample · AHS-design — Martha Lamphere</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#002855;--navy-dark:#001A3D;--gold:#C6973F;--gold-light:#D4A85A;--white:#FFFFFF;--offwhite:#F4F4F4;--gray:#333333;--gray-light:#666666;--font-heading:'Playfair Display',Georgia,serif;--font-body:'Lato','Inter',-apple-system,sans-serif;--max:1200px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body);font-size:17px;line-height:1.7;color:var(--gray);background:var(--white);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+
+.sample-banner{background:var(--navy-dark);color:var(--gold);padding:8px 24px;font-family:var(--font-body);font-size:11px;letter-spacing:1.8px;text-transform:uppercase;text-align:center;font-weight:700}
+
+/* NAV */
+nav{background:var(--navy);padding:18px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(198,151,63,0.18)}
+.brand{display:flex;align-items:baseline;gap:12px;color:var(--white)}
+.brand-mark{font-family:var(--font-heading);font-weight:600;font-size:22px;color:var(--white)}
+.brand-tag{font-family:var(--font-body);font-weight:700;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold)}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-family:var(--font-body);font-weight:700;font-size:11.5px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(255,255,255,0.85);transition:color .2s ease}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{background:var(--gold);color:var(--white)!important;padding:11px 22px;border-radius:2px;font-weight:700;font-size:11px}
+.nav-cta:hover{background:var(--gold-light)}
+
+/* HERO — full-bleed navy */
+.hero{background:var(--navy);color:var(--white);padding:140px 48px 130px 48px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 80% 30%,rgba(198,151,63,0.12) 0%,transparent 60%),radial-gradient(ellipse at 20% 80%,rgba(255,255,255,0.04) 0%,transparent 60%);pointer-events:none}
+.hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.025) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse at 70% 50%,rgba(0,0,0,1) 0%,transparent 70%);-webkit-mask-image:radial-gradient(ellipse at 70% 50%,rgba(0,0,0,1) 0%,transparent 70%);pointer-events:none}
+.hero-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:2;display:grid;grid-template-columns:1.4fr 1fr;gap:64px;align-items:center}
+.eyebrow{font-family:var(--font-body);font-weight:700;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:24px;display:inline-block}
+.hero h1{font-family:var(--font-heading);font-weight:600;font-size:clamp(46px,5.8vw,76px);line-height:1.05;letter-spacing:-0.005em;color:var(--white);max-width:920px;margin-bottom:28px}
+.hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
+.hero-rule{display:inline-block;width:60px;height:2px;background:var(--gold);margin-bottom:28px;vertical-align:middle}
+.hero-sub{font-family:var(--font-body);font-weight:300;font-size:20px;line-height:1.55;color:rgba(255,255,255,0.82);max-width:580px;margin-bottom:44px}
+.hero-actions{display:flex;gap:14px;flex-wrap:wrap}
+.btn-primary{display:inline-block;background:var(--gold);color:var(--white);font-family:var(--font-body);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:16px 36px;border:none;border-radius:2px;text-decoration:none;transition:all .2s ease}
+.btn-primary:hover{background:var(--gold-light);transform:translateY(-1px);box-shadow:0 8px 20px rgba(198,151,63,0.35)}
+.btn-secondary{display:inline-block;background:transparent;color:var(--white);font-weight:700;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:15px 35px;border:2px solid rgba(255,255,255,0.6);border-radius:2px;transition:all .2s ease;text-decoration:none}
+.btn-secondary:hover{border-color:var(--white);background:rgba(255,255,255,0.08)}
+.hero-portrait{position:relative}
+.portrait-frame{aspect-ratio:4/5;background:linear-gradient(180deg,#0E2349 0%,#001633 100%);border:1px solid rgba(198,151,63,0.35);position:relative;overflow:hidden;box-shadow:0 14px 40px rgba(0,0,0,0.3)}
+.portrait-frame::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 20%,rgba(198,151,63,0.12) 0%,transparent 60%);pointer-events:none}
+.portrait-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:rgba(255,255,255,0.4);text-align:center;padding:24px;font-family:var(--font-heading);font-style:italic;font-size:14px}
+.portrait-placeholder span{font-family:var(--font-body);font-weight:700;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block;font-style:normal}
+
+/* STATS — navy continuation */
+.stats{background:var(--navy-dark);color:var(--white);padding:70px 48px;border-top:1px solid rgba(198,151,63,0.2)}
+.stats-grid{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px;text-align:center}
+.stat{padding:0 16px;border-left:1px solid rgba(255,255,255,0.08)}
+.stat:first-child{border-left:none}
+.stat-num{font-family:var(--font-heading);font-weight:600;font-size:clamp(48px,5vw,64px);color:var(--gold);line-height:1;margin-bottom:14px;letter-spacing:-0.02em}
+.stat-num .unit{font-size:0.55em;color:var(--gold-light);font-weight:500}
+.stat-label{font-family:var(--font-body);font-weight:700;font-size:11px;letter-spacing:2.2px;text-transform:uppercase;color:rgba(255,255,255,0.78)}
+.stat-desc{font-size:13px;color:rgba(255,255,255,0.55);margin-top:8px;line-height:1.5;font-weight:300}
+
+/* PILLARS — white */
+.pillars{padding:96px 48px;background:var(--white)}
+.pillars-inner{max-width:var(--max);margin:0 auto}
+.pillars-head{text-align:center;max-width:740px;margin:0 auto 60px auto}
+.pillars-head .eyebrow{color:var(--gold)}
+.pillars-head h2{font-family:var(--font-heading);font-weight:600;font-size:clamp(34px,4vw,48px);line-height:1.15;color:var(--navy);margin-bottom:18px;letter-spacing:-0.005em}
+.pillars-head p{font-size:18px;color:var(--gray);line-height:1.7;font-weight:300;max-width:620px;margin:0 auto}
+.pillars-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.pillar-card{background:var(--white);border-top:3px solid var(--gold);padding:36px 28px 32px 28px;box-shadow:0 4px 20px rgba(0,0,30,0.05);transition:transform .25s ease,box-shadow .25s ease}
+.pillar-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(0,0,30,0.10)}
+.pillar-card .num{font-family:var(--font-body);font-weight:700;font-size:11px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:14px}
+.pillar-card h3{font-family:var(--font-heading);font-weight:600;font-size:21px;color:var(--navy);margin-bottom:12px;line-height:1.2;letter-spacing:-0.005em}
+.pillar-card p{font-size:14.5px;line-height:1.65;color:var(--gray)}
+
+@media (max-width:1024px){
+nav{padding:16px 32px}
+.hero{padding:100px 32px 90px 32px}
+.hero-inner{grid-template-columns:1fr;gap:48px}
+.hero-portrait{max-width:380px;margin:0 auto}
+.stats{padding:56px 32px}
+.stats-grid{grid-template-columns:repeat(2,1fr);gap:36px 24px}
+.stat{border-left:none}
+.pillars{padding:72px 32px}
+.pillars-grid{grid-template-columns:1fr 1fr;gap:20px}
+}
+@media (max-width:640px){
+nav{padding:14px 22px}
+.nav-links a:not(.nav-cta){display:none}
+.nav-links{gap:14px}
+.hero{padding:80px 22px 70px 22px}
+.stats{padding:48px 22px}
+.stats-grid{grid-template-columns:1fr;gap:28px}
+.pillars{padding:60px 22px}
+.pillars-grid{grid-template-columns:1fr}
+.hero-actions{flex-direction:column;align-items:stretch}
+.btn-primary,.btn-secondary{text-align:center}
+}
+</style>
+</head>
+<body>
+
+<div class="sample-banner">SAMPLE · AHS-design · Navy &amp; gold institutional — Martha Lamphere</div>
+
+<nav>
+  <a href="#" class="brand"><span class="brand-mark">Martha Lamphere</span></a>
+  <div class="nav-links">
+    <a href="#">About</a>
+    <a href="#">Raising Whole Humans</a>
+    <a href="#">Reflections</a>
+    <a href="#">Conversations</a>
+    <a href="#" class="nav-cta">Join the list</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <span class="eyebrow">Reflections · Conversations · Wisdom</span>
+      <h1>Research meets <em>real life,</em> for parents and women building whole, resilient lives.</h1>
+      <span class="hero-rule"></span>
+      <p class="hero-sub">A platform of reflections, conversations, and small gatherings for thoughtful parents raising self-driven children — and women turning lived experience into meaningful contribution.</p>
+      <div class="hero-actions">
+        <a href="#" class="btn-primary">Join the private list</a>
+        <a href="#" class="btn-secondary">Raising Whole Humans</a>
+      </div>
+    </div>
+    <div class="hero-portrait">
+      <div class="portrait-frame">
+        <div class="portrait-placeholder">
+          <span>Editorial portrait</span>
+          A warm, intelligent portrait<br/>of Martha will live here
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="stats-grid">
+    <div class="stat">
+      <div class="stat-num">20<span class="unit">+</span></div>
+      <div class="stat-label">Years</div>
+      <div class="stat-desc">Of building, parenting, learning, and resilience.</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">3</div>
+      <div class="stat-label">Sectors</div>
+      <div class="stat-desc">Entrepreneurship, wellness, and education.</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Pillars</div>
+      <div class="stat-desc">Parenting, resilience, wisdom, well-being.</div>
+    </div>
+    <div class="stat">
+      <div class="stat-num">1</div>
+      <div class="stat-label">Mission</div>
+      <div class="stat-desc">Helping people become whole, not just successful.</div>
+    </div>
+  </div>
+</section>
+
+<section class="pillars">
+  <div class="pillars-inner">
+    <div class="pillars-head">
+      <span class="eyebrow">Four content pillars</span>
+      <h2>The threads of a whole life.</h2>
+      <p>Four lifelong interests, woven together. Each pillar is a separate conversation — and yet none of them stand alone.</p>
+    </div>
+    <div class="pillars-grid">
+      <div class="pillar-card">
+        <span class="num">/ 01</span>
+        <h3>Conscious Parenting</h3>
+        <p>Raising self-driven, emotionally healthy children in achievement-driven communities.</p>
+      </div>
+      <div class="pillar-card">
+        <span class="num">/ 02</span>
+        <h3>Resilience</h3>
+        <p>Stories and reflections on hope, loss, surrender, and the strength to keep going.</p>
+      </div>
+      <div class="pillar-card">
+        <span class="num">/ 03</span>
+        <h3>Wisdom Curation</h3>
+        <p>Books, ideas, and conversations that make life richer and more meaningful.</p>
+      </div>
+      <div class="pillar-card">
+        <span class="num">/ 04</span>
+        <h3>Whole-Life Well-Being</h3>
+        <p>Health, meditation, longevity, beauty, joy — and the art of living well.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>

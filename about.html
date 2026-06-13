@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Martha · The Resilient Life with Martha Lamphere</title>
+<meta name="description" content="A lifelong learner, mother, entrepreneur, health coach, and wisdom curator exploring resilience, parenting, wellness, and human potential." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;400i;500i;700i&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#FFFFFF;--paper-warm:#FDF8F4;--paper-warmer:#F8F0E5;--page-warm:#F4ECDD;--ink:#1B2640;--ink-soft:#3A3F50;--ink-muted:#6F7480;--rule:#E8E2DC;--gold:#B58A3E;--gold-light:#D4AB66;--gold-soft:rgba(181,138,62,0.18);--sage:#94A89B;--font-heading:'Playfair Display',Georgia,serif;--font-body:'Inter',-apple-system,sans-serif;--max:1180px}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:16px;line-height:1.7;color:var(--ink-soft);background:var(--paper-warm);-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.eyebrow{font-family:var(--font-body);font-weight:700;font-size:10.5px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px;display:inline-block}
+.divider{width:50px;height:2px;background:var(--gold);margin:18px 0 22px;display:block}
+.divider.center{margin-left:auto;margin-right:auto}
+.h-display{font-family:var(--font-heading);font-weight:500;font-size:clamp(40px,5.4vw,64px);line-height:1.1;letter-spacing:-0.01em;color:var(--ink)}
+.h-section{font-family:var(--font-heading);font-weight:500;font-size:clamp(28px,3.4vw,42px);line-height:1.2;letter-spacing:-0.005em;color:var(--ink)}
+.h-card{font-family:var(--font-heading);font-weight:500;font-size:22px;line-height:1.25;color:var(--ink);letter-spacing:-0.005em}
+.lede{font-family:var(--font-heading);font-weight:400;font-style:italic;font-size:clamp(19px,1.9vw,22px);line-height:1.45;color:var(--ink);max-width:720px}
+.btn-primary{display:inline-block;background:var(--ink);color:var(--paper-warm);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:16px 32px;border:none;border-radius:2px;cursor:pointer;transition:all .25s ease;text-decoration:none}
+.btn-primary:hover{background:var(--gold);transform:translateY(-1px);box-shadow:0 8px 22px rgba(181,138,62,0.28)}
+.btn-secondary{display:inline-block;background:transparent;color:var(--ink);font-weight:600;font-size:13px;letter-spacing:1.5px;text-transform:uppercase;padding:14.5px 30px;border:1.5px solid var(--ink);border-radius:2px;transition:all .25s ease;text-decoration:none}
+.btn-secondary:hover{background:var(--ink);color:var(--paper-warm)}
+.link-arrow{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:12px;letter-spacing:2.2px;text-transform:uppercase;color:var(--gold);transition:gap .25s ease,color .25s ease}
+.link-arrow:hover{gap:14px;color:var(--ink)}
+.link-arrow::after{content:'→'}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(253,248,244,0.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);padding:18px 48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid transparent;transition:padding .3s ease,border-color .3s ease}
+nav.scrolled{padding:14px 48px;border-bottom:1px solid var(--rule)}
+.brand-mark{font-family:var(--font-heading);font-weight:600;font-size:21px;color:var(--ink)}
+.nav-links{display:flex;align-items:center;gap:32px}
+.nav-links a{font-weight:500;font-size:13px;color:var(--ink);transition:color .2s ease}
+.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-cta{background:var(--ink);color:var(--paper-warm)!important;padding:9px 18px;font-weight:600;font-size:11.5px;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px}
+.nav-cta:hover{background:var(--gold)}
+
+/* PAGE HERO */
+.page-hero{padding:160px 48px 80px 48px;background:var(--paper-warm);position:relative;overflow:hidden}
+.page-hero::before{content:'';position:absolute;top:-200px;right:-100px;width:500px;height:500px;background:radial-gradient(ellipse at center,rgba(181,138,62,0.10) 0%,transparent 60%);pointer-events:none}
+.page-hero-inner{max-width:var(--max);margin:0 auto;position:relative;z-index:1;max-width:920px}
+.page-hero h1{margin-bottom:20px}
+.page-hero h1 em{font-style:italic;color:var(--gold);font-weight:500}
+.page-hero .lede{margin-bottom:0;font-size:clamp(19px,2vw,23px)}
+
+/* NARRATIVE */
+.narrative{padding:100px 48px;background:var(--paper);border-top:1px solid var(--rule)}
+.narrative-inner{max-width:var(--max);margin:0 auto;display:grid;grid-template-columns:1.4fr 1fr;gap:80px;align-items:start}
+.narrative-text h2{color:var(--ink);margin-bottom:22px}
+.narrative-text p{font-size:17px;line-height:1.85;color:var(--ink-soft);margin-bottom:22px;max-width:600px}
+.narrative-text strong{color:var(--ink);font-weight:600}
+.narrative-text em{font-style:italic;color:var(--ink)}
+.narrative-aside{position:sticky;top:120px}
+.portrait-frame{aspect-ratio:4/5;background:linear-gradient(180deg,var(--paper-warmer) 0%,#EDE2D0 100%);border:1px solid var(--rule);position:relative;overflow:hidden;box-shadow:0 14px 40px rgba(27,38,64,0.10)}
+.portrait-frame::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 30%,rgba(255,255,255,0.6) 0%,transparent 60%);pointer-events:none}
+.portrait-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ink-muted);text-align:center;padding:24px;font-family:var(--font-heading);font-style:italic;font-size:14px}
+.portrait-placeholder span{font-family:var(--font-body);font-weight:700;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:14px;display:block;font-style:normal}
+.portrait-caption{margin-top:18px;font-family:var(--font-heading);font-style:italic;font-size:13.5px;color:var(--ink-muted);text-align:center;line-height:1.5}
+
+/* THREADS */
+.threads{padding:100px 48px;background:var(--paper-warm)}
+.threads-inner{max-width:var(--max);margin:0 auto}
+.threads-head{text-align:center;max-width:720px;margin:0 auto 56px auto}
+.threads-head h2{margin-bottom:18px}
+.threads-head .lede{margin:0 auto;color:var(--ink-soft)}
+.threads-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.thread-card{background:var(--paper);padding:32px 30px;border-top:2px solid var(--gold);transition:transform .25s ease,box-shadow .25s ease}
+.thread-card:nth-child(2n) {border-top-color:var(--sage)}
+.thread-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(27,38,64,0.08)}
+.thread-card .num{font-weight:700;font-size:10px;letter-spacing:3px;color:var(--gold);text-transform:uppercase;margin-bottom:12px}
+.thread-card:nth-child(2n) .num{color:var(--sage)}
+.thread-card h3{margin-bottom:10px;font-size:20px}
+.thread-card p{font-size:14.5px;line-height:1.7;color:var(--ink-soft)}
+
+/* PULL QUOTE */
+.quote-section{padding:100px 48px;background:var(--paper);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
+.quote-inner{max-width:820px;margin:0 auto;text-align:center}
+.quote-mark{font-family:var(--font-heading);font-size:80px;color:var(--gold);line-height:0.8;margin-bottom:14px;opacity:0.7}
+.big-quote{font-family:var(--font-heading);font-style:italic;font-weight:400;font-size:clamp(24px,3vw,34px);line-height:1.4;color:var(--ink);margin-bottom:24px;letter-spacing:-0.005em}
+.quote-attribution{font-family:var(--font-body);font-weight:700;font-size:10.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)}
+
+/* CTA */
+.cta-band{padding:100px 48px;background:var(--paper-warm);text-align:center}
+.cta-inner{max-width:720px;margin:0 auto}
+.cta-band h2{margin-bottom:20px}
+.cta-band h2 em{font-style:italic;color:var(--gold);font-weight:500}
+.cta-band p{font-size:17px;line-height:1.7;color:var(--ink-soft);margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto}
+.cta-actions{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+/* FOOTER */
+footer{padding:64px 48px 32px 48px;background:var(--paper-warmer);border-top:1px solid var(--rule)}
+.footer-inner{max-width:var(--max);margin:0 auto}
+.footer-top{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:48px;padding-bottom:40px;border-bottom:1px solid var(--rule)}
+.footer-brand p{color:var(--ink-muted);font-size:14px;line-height:1.65;max-width:320px;margin-top:14px;font-style:italic;font-family:var(--font-heading)}
+.footer-col h5{font-weight:700;font-size:10.5px;letter-spacing:2.8px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.footer-col a{color:var(--ink-soft);font-size:14px;transition:color .2s ease}
+.footer-col a:hover{color:var(--gold)}
+.footer-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:24px;flex-wrap:wrap;gap:14px;color:var(--ink-muted);font-size:11.5px}
+
+@keyframes revealFallback{to{opacity:1;transform:translateY(0)}}
+.reveal{opacity:0;transform:translateY(28px);animation:revealFallback 1s cubic-bezier(0.16,1,0.3,1) 0.5s forwards;transition:opacity .9s cubic-bezier(0.16,1,0.3,1),transform .9s cubic-bezier(0.16,1,0.3,1)}
+.reveal.revealed{opacity:1;transform:translateY(0);animation:none}
+.reveal.delay-1{animation-delay:.65s;transition-delay:.1s}
+
+@media (max-width:1024px){
+nav,.page-hero,.narrative,.threads,.quote-section,.cta-band,footer{padding-left:32px;padding-right:32px}
+nav.scrolled{padding-left:32px;padding-right:32px}
+.page-hero{padding-top:130px;padding-bottom:60px}
+.narrative,.threads,.quote-section,.cta-band{padding-top:72px;padding-bottom:72px}
+.narrative-inner{grid-template-columns:1fr;gap:48px}
+.narrative-aside{position:static;max-width:440px;margin:0 auto}
+.threads-grid{grid-template-columns:1fr;gap:20px}
+.footer-top{grid-template-columns:1fr 1fr;gap:32px}
+}
+@media (max-width:640px){
+nav{padding:14px 22px}
+nav.scrolled{padding:10px 22px}
+.nav-links a:not(.nav-cta){display:none}
+.nav-links{gap:14px}
+.page-hero,.narrative,.threads,.quote-section,.cta-band{padding-left:22px;padding-right:22px}
+.page-hero{padding-top:110px;padding-bottom:50px}
+.narrative,.threads,.quote-section,.cta-band{padding-top:60px;padding-bottom:60px}
+footer{padding:48px 22px 24px 22px}
+.cta-actions{flex-direction:column;align-items:stretch}
+.btn-primary,.btn-secondary{text-align:center}
+.footer-top{grid-template-columns:1fr;gap:28px}
+.footer-bottom{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a href="index.html" class="brand"><span class="brand-mark">Martha Lamphere</span></a>
+  <div class="nav-links">
+    <a href="about.html" class="active">About Martha</a>
+    <a href="raising-whole-humans.html">Raising Whole Humans</a>
+    <a href="reflections.html">Reflections</a>
+    <a href="conversations.html">Conversations &amp; Speaking</a>
+    <a href="contact.html">Contact</a>
+    <a href="index.html#join" class="nav-cta">Join the list</a>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <span class="eyebrow reveal">About Martha Lamphere</span>
+    <h1 class="h-display reveal">A lifelong learner, mother, entrepreneur, health coach, and <em>wisdom curator.</em></h1>
+    <span class="divider reveal"></span>
+    <p class="lede reveal delay-1">Exploring resilience, parenting, wellness, and human potential.through personal stories, research-driven reflections, and meaningful conversations.</p>
+  </div>
+</section>
+
+<section class="narrative">
+  <div class="narrative-inner">
+    <div class="narrative-text reveal">
+      <span class="eyebrow">The narrative</span>
+      <h2 class="h-section">A life shaped by curiosity, conviction, and quiet resilience.</h2>
+      <span class="divider"></span>
+      <p>Martha Lamphere has always been drawn to the ideas, people, and conversations that make life more meaningful.</p>
+      <p>She is a <strong>builder</strong> by nature. As a young entrepreneur, she built a jewelry business that reached Bergdorf Goodman. As a <strong>mother</strong>, she has become deeply interested in what helps children develop confidence, self-trust, resilience, and emotional health. As a <strong>lifelong learner</strong>, she reads widely, studies deeply, and seeks out leading thinkers across parenting, wellness, longevity, meditation, education, and consciousness.</p>
+      <p>Her life has also taught her resilience. Through grief, challenge, IVF, motherhood, and the constant work of becoming, Martha has learned that life does not always give us a clear map. But it does offer us moments of choice.<em>to give up, to harden, or to become wiser and more useful because of what we have lived.</em></p>
+      <p>Today, Martha is beginning to bring those threads together through reflections, conversations, and private gatherings. Her work is for thoughtful parents, women, and lifelong learners who want to live with more courage, consciousness, and wholeness.</p>
+    </div>
+
+    <aside class="narrative-aside reveal delay-1">
+      <div class="portrait-frame">
+        <div class="portrait-placeholder">
+          <span>Editorial portrait</span>
+          A warm, intelligent portrait<br/>of Martha will live here
+        </div>
+      </div>
+      <p class="portrait-caption">Martha Lamphere · Founder, Curator, Conversation Host</p>
+    </aside>
+  </div>
+</section>
+
+<section class="threads">
+  <div class="threads-inner">
+    <div class="threads-head reveal">
+      <span class="eyebrow">Threads of a life</span>
+      <h2 class="h-section">Six chapters, one story.</h2>
+      <span class="divider center"></span>
+      <p class="lede">No single label captures Martha's work. Each thread informs the others, andtogether they form the lens through which she reads parenting, resilience, and human potential.</p>
+    </div>
+
+    <div class="threads-grid">
+      <div class="thread-card reveal">
+        <span class="num">/ 01.Entrepreneur</span>
+        <h3 class="h-card">A jewelry brand to Bergdorf Goodman.</h3>
+        <p>Built a fine-jewelry business from scratch and saw it placed at one of the most discerning retailers in the country. The discipline and craft of building still informs how Martha approaches every undertaking.</p>
+      </div>
+      <div class="thread-card reveal">
+        <span class="num">/ 02.Mother</span>
+        <h3 class="h-card">Parenting after nineteen rounds of IVF.</h3>
+        <p>A long, deeply personal journey to motherhood, anda mother's view shaped by raising a gifted, sensitive, and self-driven daughter in an achievement-driven world.</p>
+      </div>
+      <div class="thread-card reveal">
+        <span class="num">/ 03.Health Coach</span>
+        <h3 class="h-card">Certified, with a longevity and wellness lens.</h3>
+        <p>Trained as a health coach, with sustained study across nutrition, longevity science, sleep, hormonal health, and the integrated practices that shape long-term wellbeing.</p>
+      </div>
+      <div class="thread-card reveal delay-1">
+        <span class="num">/ 04.Education Advocate</span>
+        <h3 class="h-card">Board leadership at The Weiss School.</h3>
+        <p>Active board service and advocacy for gifted, sensitive, and high-potential children.including supporting the vision for a high school pathway that meets these learners where they are.</p>
+      </div>
+      <div class="thread-card reveal delay-1">
+        <span class="num">/ 05.Lifelong Learner</span>
+        <h3 class="h-card">Books, research, meditation, and meaningful conversation.</h3>
+        <p>A serious reader and student of psychology, parenting, neuroscience, education, longevity, and consciousness.including a sustained Transcendental Meditation practice.</p>
+      </div>
+      <div class="thread-card reveal delay-1">
+        <span class="num">/ 06.Resilience</span>
+        <h3 class="h-card">Grief, becoming, and the work of staying open.</h3>
+        <p>The lived experience underneath the rest.what it has taken to keep building, parenting, learning, and contributing through the seasons that don't ask permission.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="quote-section">
+  <div class="quote-inner reveal">
+    <div class="quote-mark">&ldquo;</div>
+    <p class="big-quote">In a world obsessed with achievement, I care about something deeper: helping parents, children, women, and families become whole, resilient, healthy, and self-trusting.</p>
+    <span class="quote-attribution">— Martha Lamphere</span>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="cta-inner">
+    <span class="eyebrow reveal">Join Martha</span>
+    <h2 class="h-section reveal">Begin with the <em>private list.</em></h2>
+    <span class="divider center reveal"></span>
+    <p class="reveal">Reflections on parenting, resilience, wellness, books, and the art of raising whole humans.sent quietly, never frequently, only when there is something worth saying.</p>
+    <div class="cta-actions reveal">
+      <a href="index.html#join" class="btn-primary">Join the private list</a>
+      <a href="raising-whole-humans.html" class="btn-secondary">Explore Raising Whole Humans</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="display:inline-flex;flex-direction:column;align-items:flex-start;gap:4px"><span style="font-family:'Inter',sans-serif;font-weight:700;font-size:9.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold)">The Resilient Life</span><span class="brand-mark">Martha Lamphere</span></a>
+        <p style="font-family:var(--font-heading);font-style:italic;font-size:13px;color:var(--ink-muted);margin-top:6px;margin-bottom:14px">with Martha Lamphere</p>
+        <p>Reflections, conversations, and wisdom for parents and women building whole, resilient lives.</p>
+      </div>
+      <div class="footer-col"><h5>Explore</h5><ul><li><a href="about.html">About Martha</a></li><li><a href="raising-whole-humans.html">Raising Whole Humans</a></li><li><a href="reflections.html">Reflections</a></li><li><a href="conversations.html">Conversations &amp; Speaking</a></li></ul></div>
+      <div class="footer-col"><h5>Connect</h5><ul><li><a href="contact.html">Contact</a></li><li><a href="index.html#join">Join the list</a></li><li><a href="contact.html">Invite Martha</a></li></ul></div>
+      <div class="footer-col"><h5>Pillars</h5><ul><li>Conscious Parenting</li><li>Resilience</li><li>Wisdom Curation</li><li>Whole-Life Well-Being</li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Martha Lamphere · All rights reserved</span><span style="font-style:italic;font-family:var(--font-heading)">Research meets real life.</span></div>
+  </div>
+</footer>
+
+<script>
+(function(){try{var nav=document.getElementById('nav');var onScroll=function(){if(window.scrollY>30)nav.classList.add('scrolled');else nav.classList.remove('scrolled');};window.addEventListener('scroll',onScroll,{passive:true});onScroll();if('IntersectionObserver' in window){var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('revealed');o.unobserve(e.target);}});},{threshold:0.12});document.querySelectorAll('.reveal').forEach(function(el){o.observe(el);});}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('revealed');});}}catch(err){document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('revealed');});}})();
+</script>
+</body>
+</html>
