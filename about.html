@@ -54,6 +54,12 @@ nav.scrolled{padding:14px 48px;border-bottom:1px solid var(--rule)}
 .narrative-text strong{color:var(--ink);font-weight:600}
 .narrative-text em{font-style:italic;color:var(--ink)}
 .narrative-aside{position:sticky;top:120px}
+.brief-card{background:var(--paper-warmer);border-left:2px solid var(--gold);padding:30px 28px 26px;box-shadow:0 14px 40px rgba(27,38,64,0.06)}
+.brief-card .eyebrow{margin-bottom:14px}
+.brief-card dl{margin:0}
+.brief-card dt{font-family:var(--font-body);font-weight:700;font-size:9.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-top:16px}
+.brief-card dt:first-child{margin-top:0}
+.brief-card dd{margin:4px 0 0;font-family:var(--font-heading);font-size:17px;line-height:1.45;color:var(--ink)}
 .portrait-frame{aspect-ratio:4/5;background:linear-gradient(180deg,var(--paper-warmer) 0%,#EDE2D0 100%);border:1px solid var(--rule);position:relative;overflow:hidden;box-shadow:0 14px 40px rgba(27,38,64,0.10)}
 .portrait-frame::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 30%,rgba(255,255,255,0.6) 0%,transparent 60%);pointer-events:none}
 .portrait-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;color:var(--ink-muted);text-align:center;padding:24px;font-family:var(--font-heading);font-style:italic;font-size:14px}
@@ -168,13 +174,16 @@ footer{padding:48px 22px 24px 22px}
     </div>
 
     <aside class="narrative-aside reveal delay-1">
-      <div class="portrait-frame">
-        <div class="portrait-placeholder">
-          <span>Editorial portrait</span>
-          A warm, intelligent portrait<br/>of Martha will live here
-        </div>
+      <div class="brief-card">
+        <span class="eyebrow">In brief</span>
+        <dl>
+          <dt>Role</dt><dd>Founder, curator, conversation host</dd>
+          <dt>Built</dt><dd>A jewelry brand carried by Bergdorf Goodman</dd>
+          <dt>Reads</dt><dd>Parenting, wellness, longevity, meditation, education, consciousness</dd>
+          <dt>Writes about</dt><dd>Resilience, conscious parenting, and becoming whole</dd>
+          <dt>Gathers</dt><dd>Thoughtful parents, women, and lifelong learners</dd>
+        </dl>
       </div>
-      <p class="portrait-caption">Martha Lamphere · Founder, Curator, Conversation Host</p>
     </aside>
   </div>
 </section>
